@@ -1,0 +1,19 @@
+{
+  "name": "express-mock-mc-api",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "nodemon app.js",
+		"run": "node app.js"
+  },
+  "keywords": [],
+  "author": "Nicolas LIENART",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.1"
+  },
+	"devDependencies": {
+    "nodemon": "^2.0.2"
+	}
+}
