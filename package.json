@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "dev": "nodemon app.js",
-		"run": "node app.js"
+    "run": "node app.js"
   },
   "keywords": [],
   "author": "Nicolas LIENART",
@@ -13,7 +13,7 @@
   "dependencies": {
     "express": "^4.17.1"
   },
-	"devDependencies": {
+  "devDependencies": {
     "nodemon": "^2.0.2"
-	}
+  }
 }
