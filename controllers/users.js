@@ -18,9 +18,13 @@ module.exports = function(app) {
 		// NOTE: internal param system like the :id
 		// http://expressjs.com/en/4x/api.html#req.params
 		console.log(req.params); 
-
-		var user = user_model.getUserNameById(req.params.id);
-		if (user) res.status(200).send(user);
-		else res.status(404).send({ error: "user not found" });
+		user_model.getUserNameById(req.params.id)
+			.then(userName => {
+				res.status(200).send({ name: userName });
+				res.end();
+			})
+			.catch(err => {
+				if (err) res.status(404).send({ error: "user not found" });
+			});
 	});
 };
