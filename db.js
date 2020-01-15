@@ -1,3 +1,4 @@
+/*
 const users = [	
 	{ id: '1', name: 'Jack', pwd: 'Jaxk1992'},
 	{ id: '2', name: 'Eva', pwd: 'Eeevaaa'},
@@ -32,3 +33,12 @@ const bases = [
 
 module.exports.users = users;
 module.exports.bases = bases;
+*/
+
+const neo4j = require('neo4j-driver');
+const driver = neo4j.driver(
+	'neo4j://localhost',
+	neo4j.auth.basic('neo4j', 'neo4j') // NOTE: username, pwd
+);
+
+module.exports = driver;
