@@ -21,6 +21,7 @@ index(app);
 */
 require('./controllers/index')(app);
 require('./controllers/users')(app);
+require('./controllers/neuron')(app);
 require('./controllers/bases')(app);
 
 const port = 3000;
